@@ -1,0 +1,74 @@
+{
+    "Header": {
+        "title": "Hi 👋 My Name Is Mohamed Maher",
+        "about": "Front End developer 🎨"
+    },
+    "Skills": {
+        "title": "Skills"
+    },
+    "projects": {
+        "subtitle": "projects",
+        "data": [
+            {
+                "imgUrl": "/projects/gym.png",
+                "demoLink": "https://65bf90353c6c595d54c656dd--zingy-kataifi-4e33e0.netlify.app/",
+                "description": "React Website with Material-UI (MUI) Integration Welcome to our latest project, a dynamic and visually appealing website built with React, showcasing the seamless integration of Material-UI (MUI) components and API exercises.",
+                "title": "Fitness Club",
+                "technologies": [
+                    "Material-UI",
+                    "RESTAPI",
+                    "Responsive"
+                ]
+            },
+            {
+                "imgUrl": "/projects/cima.png",
+                "demoLink": "https://cinema-hub-nine.vercel.app/",
+                "description": "React application that seamlessly integrates React-Player, Redux state management, Tailwind CSS, DaisyUI components, and the powerful TMDB API. This comprehensive web application delivers an immersive multimedia experience and showcases the synergy of cutting-edge technologies.",
+                "title": "Cinema Hub",
+                "technologies": [
+                    "Redux",
+                    "RESTAPI",
+                    "React-Player",
+                    "Tailwind CSS",
+                    "DaisyUI",
+                    "Responsive"
+                ]
+            },
+            {
+                "imgUrl": "/projects/dragonShoes.png",
+                "demoLink": "https://mohamed-maher50.github.io/dragon/",
+                "description": " immersive online shoe store crafted with React, Tailwind CSS, i18n-next for internationalization, and AOS animations. This dynamic web application combines seamless language localization, captivating animations, and responsive design to offer a modern and user-friendly online shopping experience.",
+                "title": "dragon shoes",
+                "technologies": [
+                    "Tailwind CSS",
+                    "Responsive",
+                    "aos animation",
+                    "i18n next"
+                ]
+            },
+            {
+                "imgUrl": "/projects/taskedo.png",
+                "demoLink": "https://65bf8816b90990572d794ce2--ephemeral-truffle-0e53b7.netlify.app",
+                "description": " Todo App crafted with Node.js, Express, React, Tailwind CSS, and Framer Motion. This dynamic web application combines the robustness of server-side logic, seamless client-server communication, responsive design, and interactive animations to provide users with an exceptional task management experience.",
+                "title": "taskedo",
+                "technologies": [
+                    "nodejs",
+                    "express",
+                    "Tailwind CSS",
+                    "Responsive",
+                    "framer motion",
+                    "rest api"
+                ]
+            }
+        ],
+        "buttonDemo": "demo"
+    },
+    "contactForm": {
+        "contactMe": "contact me",
+        "email": "your email",
+        "emailPlaceholder": "type your email",
+        "message": "your message",
+        "messagePlaceholder": "leave a message",
+        "send": "send"
+    }
+}

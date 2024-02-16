@@ -1,0 +1,105 @@
+import React from "react";
+import CircleImage from "../CircleImage";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { TbFileCv } from "react-icons/tb";
+
+const variantsContainer = {
+  down: {
+    start: {
+      y: -200,
+    },
+    end: {
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 80,
+      },
+    },
+  },
+  up: {
+    start: {
+      y: 1000,
+    },
+    end: {
+      y: 0,
+      transition: {
+        delay: 0.3,
+        ease: "easeInOut",
+        type: "spring",
+        stiffness: 40,
+      },
+    },
+  },
+};
+const Links = [
+  {
+    label: "download cv",
+    href: "/mohamedmaher_cv.pdf",
+    download: true,
+    Icon: TbFileCv,
+  },
+  {
+    label: "GitHub ",
+    href: "https://github.com/Mohamed-maher50/",
+    download: true,
+    Icon: FaGithub,
+  },
+  {
+    label: "Linked in ",
+    href: "https://www.linkedin.com/in/mohamed-maher-2937a1204/",
+    download: true,
+    Icon: FaLinkedin,
+  },
+];
+const Header = () => {
+  const { t } = useTranslation("");
+  return (
+    <div className="container mx-auto py-16 overflow-hidden capitalize">
+      <div className="grid md:grid-cols-2 text-center md:text-start gap-1">
+        <div className="gap-2 flex flex-col">
+          <motion.strong
+            variants={variantsContainer.down}
+            initial="start"
+            animate="end"
+            className="text-5xl h-fit   pt-10    text-accent font-extrabold "
+          >
+            {t("Header.title")}
+          </motion.strong>
+
+          <motion.p
+            variants={variantsContainer.up}
+            initial="start"
+            animate="end"
+            className="text-secondary font-extrabold text-4xl z-10 opacity-70    xl:text-6xl   "
+          >
+            {t("Header.about")}
+          </motion.p>
+          <div className="flex py-5 flex-wrap gap-4">
+            {Links.map(({ href, label, Icon, ...other }) => {
+              return (
+                <Link
+                  className="btn btn-outline btn-secondary w-fit hover:scale-95"
+                  to={href}
+                  target="_blank"
+                  {...other}
+                >
+                  {label}
+                  {Icon && <Icon className="text-xl" />}
+                </Link>
+              );
+            })}{" "}
+          </div>
+        </div>
+
+        <div className="   ">
+          <CircleImage customStyle={` mx-auto `} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Header;
