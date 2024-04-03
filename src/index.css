@@ -9,3 +9,28 @@ body[dir="rtl"] * {
 body[dir="ltr"] * {
   @apply font-Rubik;
 }
+@layer utilities {
+  .running {
+    animation-play-state: running;
+  }
+  .pause {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+    -moz-transform: translateX(-10%);
+    -ms-transform: translateX(-10%);
+    -o-transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(30%);
+    -webkit-transform: translateX(30%);
+    -moz-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    -o-transform: translateX(30%);
+  }
+}

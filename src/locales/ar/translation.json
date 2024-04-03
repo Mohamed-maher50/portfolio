@@ -59,6 +59,22 @@
                     "framer motion",
                     "rest api"
                 ]
+            },
+            {
+                "imgUrl": "/projects/pexels.png",
+                "demoLink": "https://pexels-navy.vercel.app/",
+                "description": " اكتشف الوصول السلس إلى مكتبة واسعة من الصور ومقاطع الفيديو الخالية من حقوق الملكية، واستكشف ما لا نهاية باستخدام React Infinite Scroll، واستمتع بأوقات تحميل فائقة السرعة وتصميم سريع الاستجابة، وانغمس في مقاطع فيديو جذابة، وقم بتخصيص رحلة التصفح الخاصة بك باستخدام مرشحات الألوان، وقم بتنزيل جهازك بسهولة المفضلة بنقرة واحدة.",
+                "title": "Logo",
+                "technologies": [
+                    "Tailwind CSS",
+                    "Responsive",
+                    "Infinity scroll",
+                    "lazy loading",
+                    "pexels api",
+                    "React",
+                    "responsive masonry",
+                    "react-player "
+                ]
             }
         ],
         "buttonDemo": "عرض تجربي"

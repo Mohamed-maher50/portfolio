@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Hero from "../assets/images/hero.jpg";
+import Hero from "../assets/images/hero.webp";
 const scaleVariant = {
   initial: { scale: 0 },
   animate: {

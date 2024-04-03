@@ -24,7 +24,7 @@ const variantContainer = {
     },
   },
 };
-const Skill = ({ skill, icon, customStyle, index }) => {
+const Skill = ({ skill, icon, customStyle = "", index }) => {
   const { ref, inView } = useInView();
 
   const controls = useAnimation();

@@ -33,6 +33,15 @@ module.exports = {
   },
   theme: {
     extend: {
+      keyframes: {
+        runRight: {
+          "0%": { transform: " translateX(-10%)" },
+          "100%": { transform: " translateX(30%)" },
+        },
+      },
+      animation: {
+        runRight: "runRight 0.8s ease-in infinite alternate both",
+      },
       fontFamily: {
         Rubik: ["Rubik"],
         NotoKufi: ["Noto Kufi Arabic", "Karla"],
