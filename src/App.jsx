@@ -3,14 +3,18 @@ import "./App.css";
 import { motion } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/pages/HomePage";
+import { themes } from "./components/layout/themes/ThemeBar";
 
 function App() {
   useEffect(() => {
-    if (localStorage.getItem("theme"))
-      document.documentElement.setAttribute(
-        "data-theme",
-        localStorage.getItem("theme")
-      );
+    let theme = localStorage.getItem("theme");
+    if (theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      console.log(theme);
+      document
+        .querySelector('meta[name="theme-color"]')
+        ?.setAttribute("content", themes[theme]?.accent);
+    }
   }, []);
 
   return (

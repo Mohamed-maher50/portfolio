@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Theme from "../../Theme";
 import { FiChevronDown } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
-const themes = {
+export const themes = {
   light: {
     primary: "#F3F0CA",
     secondary: "#192655",
@@ -62,6 +62,10 @@ const ThemeBar = () => {
   const themeContainer = useRef();
   const handleOnClick = (theme) => {
     document.documentElement.setAttribute("data-theme", theme);
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", themes[theme].accent);
+
     localStorage.setItem("theme", theme);
     setIsActive(false);
   };

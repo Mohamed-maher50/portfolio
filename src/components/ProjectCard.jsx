@@ -23,7 +23,7 @@ const ProjectCard = ({
         <div className="px-5 group-[.rtl]:md:order-2  ">
           <img
             src={imgUrl}
-            className="w-full h-full max-md:rounded-3xl  max-h-96 rounded-tr-3xl p-2 rounded-tl-3xl"
+            className="w-full max-sm:h-52 h-full max-md:rounded-3xl  max-h-96 rounded-tr-3xl p-2 rounded-tl-3xl"
             alt="pexels"
           />{" "}
         </div>
