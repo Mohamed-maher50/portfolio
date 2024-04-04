@@ -12,8 +12,9 @@ module.exports = {
         },
         dark: {
           primary: "#1A120B",
-          secondary: "#D5CEA3",
-          accent: "#E5E5CB",
+          secondary: "#E5E5CB",
+          accent: "#D5CEA3",
+          //#D5CEA3
           sub: "#E5E5CB",
         },
         natural: {

@@ -22,7 +22,9 @@ const HomePage = () => {
 
   return (
     <div className="grid gap-7">
-      <LangButton changeLanguage={handleChangeLanguage} />
+      <OnLangChange>
+        {() => <LangButton changeLanguage={handleChangeLanguage} />}
+      </OnLangChange>
       <ThemeBar />
       <Header />
       <Skills />
