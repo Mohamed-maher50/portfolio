@@ -10,6 +10,55 @@
         "subtitle": "projects",
         "data": [
             {
+                "imgUrl": "/projects/pexels.png",
+                "demoLink": "https://pexels-navy.vercel.app/",
+                "description": " Discover seamless access to a vast library of royalty-free images and videos, explore endlessly with React Infinite Scroll, enjoy lightning-fast load times and responsive design, immerse yourself in captivating videos, personalize your browsing journey with color filters, and effortlessly download your favorites with one click.",
+                "title": "Logo",
+                "technologies": [
+                    "Tailwind CSS",
+                    "Responsive",
+                    "Infinity scroll",
+                    "lazy loading",
+                    "pexels api",
+                    "React",
+                    "responsive masonry",
+                    "react-player "
+                ]
+            },
+            {
+                "imgUrl": "/projects/propertyhunters.png",
+                "demoLink": "https://www.propertyhunters.co/",
+                "description": " provides virtual assistants who have at least 3 years experience in the real estate industry, and can get you more qualified leads from calling your data lists. Proven model for scaling brokerages & Wholesaling Operations.",
+                "title": "property hunters",
+                "technologies": [
+                    "Tailwind CSS",
+                    "Responsive",
+                    "react-hook-form",
+                    "react-toastify",
+                    "React",
+                    "flowbite-react",
+                    "aos"
+                ]
+            },
+            {
+                "imgUrl": "/projects/maherShop.png",
+                "demoLink": "https://gilded-cat-f97c21.netlify.app/",
+                "description": "Welcome to MaherShop - your one-stop destination for online shopping! Discover a wide array of products, seamless navigation, and secure transactions. Shop confidently with Google login, swift checkout via Stripe, and a user-friendly shopping cart. Enjoy a hassle-free shopping experience with advanced filtration, robust search, and easy management of products.",
+                "title": "Maher shop",
+                "technologies": [
+                    "RESTAPI",
+                    "Responsive",
+                    "nodejs",
+                    "cloudinary",
+                    "multer",
+                    "mongodb",
+                    "stripe",
+                    "Tailwind CSS",
+                    "DaisyUI",
+                    "firebase auth"
+                ]
+            },
+            {
                 "imgUrl": "/projects/gym.png",
                 "demoLink": "https://65bf90353c6c595d54c656dd--zingy-kataifi-4e33e0.netlify.app/",
                 "description": "React Website with Material-UI (MUI) Integration Welcome to our latest project, a dynamic and visually appealing website built with React, showcasing the seamless integration of Material-UI (MUI) components and API exercises.",
@@ -58,22 +107,6 @@
                     "Responsive",
                     "framer motion",
                     "rest api"
-                ]
-            },
-            {
-                "imgUrl": "/projects/pexels.png",
-                "demoLink": "https://pexels-navy.vercel.app/",
-                "description": " Discover seamless access to a vast library of royalty-free images and videos, explore endlessly with React Infinite Scroll, enjoy lightning-fast load times and responsive design, immerse yourself in captivating videos, personalize your browsing journey with color filters, and effortlessly download your favorites with one click.",
-                "title": "Logo",
-                "technologies": [
-                    "Tailwind CSS",
-                    "Responsive",
-                    "Infinity scroll",
-                    "lazy loading",
-                    "pexels api",
-                    "React",
-                    "responsive masonry",
-                    "react-player "
                 ]
             }
         ],

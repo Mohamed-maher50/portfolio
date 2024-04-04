@@ -10,6 +10,55 @@
         "subtitle": "المشاريع",
         "data": [
             {
+                "imgUrl": "/projects/pexels.png",
+                "demoLink": "https://pexels-navy.vercel.app/",
+                "description": " اكتشف الوصول السلس إلى مكتبة واسعة من الصور ومقاطع الفيديو الخالية من حقوق الملكية، واستكشف ما لا نهاية باستخدام React Infinite Scroll، واستمتع بأوقات تحميل فائقة السرعة وتصميم سريع الاستجابة، وانغمس في مقاطع فيديو جذابة، وقم بتخصيص رحلة التصفح الخاصة بك باستخدام مرشحات الألوان، وقم بتنزيل جهازك بسهولة المفضلة بنقرة واحدة.",
+                "title": "Logo",
+                "technologies": [
+                    "Tailwind CSS",
+                    "Responsive",
+                    "Infinity scroll",
+                    "lazy loading",
+                    "pexels api",
+                    "React",
+                    "responsive masonry",
+                    "react-player "
+                ]
+            },
+            {
+                "imgUrl": "/projects/propertyhunters.png",
+                "demoLink": "https://www.propertyhunters.co/",
+                "description": "يوفر لك مساعدين افتراضيين يتمتعون بخبرة لا تقل عن 3 سنوات في مجال العقارات، ويمكنهم الحصول على المزيد من العملاء المحتملين المؤهلين من خلال الاتصال بقوائم البيانات الخاصة بك. نموذج مثبت لتوسيع نطاق شركات الوساطة وعمليات البيع بالجملة.",
+                "title": "property hunters",
+                "technologies": [
+                    "Tailwind CSS",
+                    "Responsive",
+                    "react-hook-form",
+                    "react-toastify",
+                    "React",
+                    "flowbite-react",
+                    "aos"
+                ]
+            },
+            {
+                "imgUrl": "/projects/maherShop.png",
+                "demoLink": "https://gilded-cat-f97c21.netlify.app/",
+                "description": "مرحبًا بك في MaherShop - وجهتك الشاملة للتسوق عبر الإنترنت! اكتشف مجموعة واسعة من المنتجات والتنقل السلس والمعاملات الآمنة. تسوق بثقة من خلال تسجيل الدخول إلى Google، والخروج السريع عبر Stripe، وعربة التسوق سهلة الاستخدام. استمتع بتجربة تسوق خالية من المتاعب مع التصفية المتقدمة والبحث القوي والإدارة السهلة للمنتجات.",
+                "title": "Maher shop",
+                "technologies": [
+                    "RESTAPI",
+                    "Responsive",
+                    "nodejs",
+                    "cloudinary",
+                    "multer",
+                    "mongodb",
+                    "stripe",
+                    "Tailwind CSS",
+                    "DaisyUI",
+                    "firebase auth"
+                ]
+            },
+            {
                 "imgUrl": "/projects/gym.png",
                 "demoLink": "https://65bf90353c6c595d54c656dd--zingy-kataifi-4e33e0.netlify.app/",
                 "description": "موقع React مع تكامل Material-UI (MUI) مرحبًا بك في أحدث مشروع لدينا، وهو موقع ويب ديناميكي وجذاب بصريًا تم إنشاؤه باستخدام React، ويعرض  السلس لمكونات Material-UI (MUI) وتمارين API.",
@@ -58,22 +107,6 @@
                     "Responsive",
                     "framer motion",
                     "rest api"
-                ]
-            },
-            {
-                "imgUrl": "/projects/pexels.png",
-                "demoLink": "https://pexels-navy.vercel.app/",
-                "description": " اكتشف الوصول السلس إلى مكتبة واسعة من الصور ومقاطع الفيديو الخالية من حقوق الملكية، واستكشف ما لا نهاية باستخدام React Infinite Scroll، واستمتع بأوقات تحميل فائقة السرعة وتصميم سريع الاستجابة، وانغمس في مقاطع فيديو جذابة، وقم بتخصيص رحلة التصفح الخاصة بك باستخدام مرشحات الألوان، وقم بتنزيل جهازك بسهولة المفضلة بنقرة واحدة.",
-                "title": "Logo",
-                "technologies": [
-                    "Tailwind CSS",
-                    "Responsive",
-                    "Infinity scroll",
-                    "lazy loading",
-                    "pexels api",
-                    "React",
-                    "responsive masonry",
-                    "react-player "
                 ]
             }
         ],

@@ -78,9 +78,10 @@ const Header = () => {
             {t("Header.about")}
           </motion.p>
           <div className="flex py-5 flex-wrap gap-4">
-            {Links.map(({ href, label, Icon, ...other }) => {
+            {Links.map(({ href, label, Icon, ...other }, index) => {
               return (
                 <Link
+                  key={index}
                   className="btn btn-outline btn-secondary w-fit hover:scale-95"
                   to={href}
                   target="_blank"

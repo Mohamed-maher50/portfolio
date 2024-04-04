@@ -9,7 +9,6 @@ const ProjectsContainer = () => {
   const projects = t("projects.data", {
     returnObjects: true,
   });
-  console.log(projects);
 
   return (
     <>
