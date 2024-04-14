@@ -28,7 +28,7 @@ const HomePage = () => {
       <ThemeBar />
       <Header />
        <Skills />
-      <section className="container mx-auto  ">
+      <section id="projects" className="container mx-auto  ">
         <ProjectsContainer />
       </section>
 
