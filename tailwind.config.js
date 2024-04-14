@@ -5,29 +5,32 @@ module.exports = {
     themes: [
       {
         light: {
-          primary: "#F3F0CA",
-          secondary: "#192655",
-          accent: "#3876bf",
+          primary: "#FCFCD4",//FCFCD4
+          secondary: "#ffffff",//FCFCD4
+          accent: "#00524C",
           sub: "#e1aa74",
         },
         dark: {
-          primary: "#1A120B",
-          secondary: "#E5E5CB",
-          accent: "#D5CEA3",
+          primary: "#34353A",
+          secondary: "#3D3E42",
+          "secondary-content":"#ffffff",
+          accent: "#FFC86B",
           //#D5CEA3
           sub: "#E5E5CB",
         },
         natural: {
-          primary: "#3C6255",
-          secondary: "#EAE7B1",
-          accent: "#A6BB8D", //61876E
+          primary: "#BFD2B6",
+          secondary: "#FAFAFA",
+          accent: "#1C723D", //61876E
           sub: "#61876E",
+          "secondary-content":"#1D3911",
         },
         CoolTonesPalette: {
           primary: "#F1F6F9",
-          secondary: "#394867",
-          accent: "#212A3E", //61876E
-          sub: "#9BA4B5",
+          secondary: "#fff",
+          accent: "#344B47", //BBC0C2
+         
+          "secondary-content":"#000",
         },
       },
     ],

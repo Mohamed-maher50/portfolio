@@ -1,6 +1,6 @@
 {
     "Header": {
-        "title": "Hi 👋 My Name Is Mohamed Maher",
+        "title": "Hi 👋 My Name Is <span class='accent'> Mohamed Maher<span>",
         "about": "Front End developer 🎨"
     },
     "Skills": {

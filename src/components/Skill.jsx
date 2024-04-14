@@ -52,7 +52,7 @@ const Skill = ({ skill, icon, customStyle = "", index }) => {
       custom={index}
       animate={controls}
       ref={ref}
-      className={`p-2 bg-secondary overflow-hidden relative font-semibold shadow-inner text-primary rounded-lg ${customStyle}`}
+      className={`p-2 py-4 hover:bg-accent duration-500 hover:text-primary ease-in-out bg-secondary overflow-hidden relative font-semibold  text-secondary-content shadow-lg rounded-lg ${customStyle}`}
     >
       <div className="text-3xl block w-fit mx-auto">{icon}</div>
       <h1 className="text-sm  w-fit mx-auto">{skill}</h1>

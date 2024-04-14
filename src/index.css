@@ -17,7 +17,9 @@ body[dir="ltr"] * {
     animation-play-state: paused;
   }
 }
-
+.accent{
+  @apply text-accent
+}
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-10%);

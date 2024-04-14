@@ -6,7 +6,7 @@ import Skills from "../layout/Skills";
 import i18n from "../../i18";
 import ProjectsContainer from "../../containers/ProjectsContainer";
 import ContactForm from "../ContactForm";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import OnLangChange from "../../services/OnLangChange";
 
 const HomePage = () => {
@@ -27,7 +27,7 @@ const HomePage = () => {
       </OnLangChange>
       <ThemeBar />
       <Header />
-      <Skills />
+       <Skills />
       <section className="container mx-auto  ">
         <ProjectsContainer />
       </section>
@@ -51,7 +51,7 @@ const HomePage = () => {
             </>
           );
         }}
-      </OnLangChange>
+      </OnLangChange> 
     </div>
   );
 };

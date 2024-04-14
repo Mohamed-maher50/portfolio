@@ -17,7 +17,7 @@ const ProjectCard = ({
   return (
     <div
       {...parentProps}
-      className={`bg-secondary flex  shadow-lg text-white px-4 pt-4 rounded-3xl overflow-hidden ${className}`}
+      className={`bg-secondary flex  shadow-sm border-2 border-primary text-white px-4 pt-4 rounded-3xl overflow-hidden ${className}`}
     >
       <div className="grid  max-md:grid-cols-1 max-lg:gap-1 grid-cols-2">
         <div className="px-5 group-[.rtl]:md:order-2  ">
@@ -29,10 +29,10 @@ const ProjectCard = ({
         </div>
 
         <div className="flex  p-4  flex-col gap-2 lg:gap-7">
-          <h1 className="text-4xl max-lg:text-3xl capitalize text-primary">
+          <h1 className="text-4xl max-lg:text-3xl capitalize text-accent">
             {title}
           </h1>
-          <h3 className="text-primary text-lg max-lg:text-base opacity-80 ">
+          <h3 className="text-secondary-content text-lg max-lg:text-base opacity-80 ">
             {description}
           </h3>
           <div className="flex  gap-2 flex-wrap py-2">
@@ -50,7 +50,7 @@ const ProjectCard = ({
             <Link
               to={demoLink}
               target="_blank"
-              className="flex underline text-primary  items-center gap-2"
+              className="flex  text-secondary hover:bg-secondary hover:text-accent btn hover:border-accent bg-accent  items-center gap-2"
             >
               {t("projects.buttonDemo")}
               <FaArrowRightLong className=" pt-1 group-hover/demo:animate-runRight" />

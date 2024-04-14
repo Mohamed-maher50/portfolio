@@ -16,7 +16,7 @@ const CircleImage = ({ customStyle }) => {
       animate="animate"
       src={Hero}
       alt="mohamed maher"
-      className={`h-72 w-72 border-secondary border-4 rounded-full object-cover ml-auto overflow-hidden shadow-xl ${customStyle} `}
+      className={`h-72 w-72 outline outline-offset-8  outline-accent  rounded-full object-cover ml-auto overflow-hidden shadow-xl ${customStyle} `}
     />
   );
 };

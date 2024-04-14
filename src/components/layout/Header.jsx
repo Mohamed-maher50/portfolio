@@ -64,16 +64,17 @@ const Header = () => {
             variants={variantsContainer.down}
             initial="start"
             animate="end"
-            className="text-5xl h-fit   pt-10    text-accent font-extrabold "
+            dangerouslySetInnerHTML={{ __html: t("Header.title") }}
+            className="text-5xl h-fit   pt-10    text-secondary-content font-extrabold "
           >
-            {t("Header.title")}
+            
           </motion.strong>
 
           <motion.p
             variants={variantsContainer.up}
             initial="start"
             animate="end"
-            className="text-secondary font-extrabold text-4xl z-10 opacity-70    xl:text-6xl   "
+            className="text-secondary-content font-extrabold text-4xl z-10    xl:text-6xl   "
           >
             {t("Header.about")}
           </motion.p>
@@ -82,7 +83,7 @@ const Header = () => {
               return (
                 <Link
                   key={index}
-                  className="btn btn-outline btn-secondary w-fit hover:scale-95"
+                  className="btn btn-outline btn-accent w-fit hover:scale-95"
                   to={href}
                   target="_blank"
                   {...other}

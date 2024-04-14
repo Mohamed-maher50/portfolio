@@ -44,21 +44,25 @@ const variantsContainer = {
   },
   dragIcon: {
     start: {
-      opacity: 0.9,
-      scale: 0.8,
+   
+      y:0,
+      transition: {
+        duration: 1,
+        type: "spring",
+        stiffness: 100,
+      },
     },
     end: {
+      y:10,
       transition: {
-        type: "spring",
         stiffness: 10,
-        duration: 2,
+   
       },
     },
   },
 };
 const ThemeBar = () => {
   const [isActive, setIsActive] = useState(false);
-  // const [containerWidth, setContainerWidth] = useState(0);
   const themeContainer = useRef();
   const handleOnClick = (theme) => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -69,19 +73,16 @@ const ThemeBar = () => {
     localStorage.setItem("theme", theme);
     setIsActive(false);
   };
-  // useEffect(() => {
-  //   themeContainer.current &&
-  //     setContainerWidth(themeContainer.current.scrollWidth);
-  // }, [themeContainer.current]);
+ 
   return (
-    <motion.div className="fixed top-0 z-20   right-0 left-0">
-      <AnimatePresence mode="wait">
+    <motion.div  className="fixed top-0 z-20   right-0 left-0">
+      <AnimatePresence  >
         {isActive && (
           <motion.div
             layout
             initial="start"
             animate="end"
-            variants={variantsContainer.down}
+            variants={variantsContainer.down}     
             exit={{
               y: "-100%",
             }}
@@ -90,10 +91,7 @@ const ThemeBar = () => {
           >
             <motion.div
               drag="x"
-              dragConstraints={{
-                left: 0,
-                right: 0,
-              }}
+              dragConstraints={themeContainer}
               className="flex mx-auto gap-2 my-3 justify-around px-2"
             >
               {Object.entries(themes).map(([name, colors], index) => {
@@ -108,21 +106,30 @@ const ThemeBar = () => {
               })}
             </motion.div>
           </motion.div>
-        )}{" "}
-        <motion.span
+        )}
+
+        
+    <motion.span
           onClick={() => setIsActive(!isActive)}
-          initial="start"
-          variants={variantsContainer.dragIcon}
-          whileHover={{
-            opacity: 1,
-            translateY: isActive ? "-5px" : "5px",
-            scale: 1,
+          initial={{
+            y:0,
           }}
-          className="font-bold z-50 fixed left-1/2  text-lg duration-200 shadow-md mt-2 bg-secondary text-primary mx-auto w-fit block rounded-full  cursor-pointer"
-        >
+          animate={{
+            y: isActive ? 0 : 10
+          }}
+          whileHover={{
+            translateY: isActive ? "-5px" : "10px", 
+          }}
+          className="font-bold z-50 fixed left-1/2  text-lg  shadow-md mt-2 bg-accent text-primary mx-auto w-fit block rounded-full  cursor-pointer"
+          >
           <FiChevronDown className="text-3xl" />
         </motion.span>
-      </AnimatePresence>
+         </AnimatePresence>
+        
+     
+      
+         
+     
     </motion.div>
   );
 };

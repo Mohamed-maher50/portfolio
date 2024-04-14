@@ -35,7 +35,7 @@ const ContactForm = ({ dir }) => {
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2">
           <div>
-            <h2 className="mb-4 text-4xl text-secondary font-extrabold  ">
+            <h2 className="mb-4 text-4xl text-secondary-content capitalize font-extrabold  ">
               {t("contactForm.contactMe")}📬
             </h2>
             <form
@@ -74,7 +74,7 @@ const ContactForm = ({ dir }) => {
                   placeholder={t("contactForm.messagePlaceholder")}
                 ></textarea>
               </div>
-              <button className="btn btn-secondary text-white shadow-md">
+              <button className="btn btn-accent  text-primary shadow-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
