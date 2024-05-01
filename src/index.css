@@ -20,6 +20,10 @@ body[dir="ltr"] * {
 .accent{
   @apply text-accent
 }
+
+html{
+  @apply snap-proximity snap-y snap-normal
+}
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-10%);
@@ -35,4 +39,8 @@ body[dir="ltr"] * {
     -ms-transform: translateX(30%);
     -o-transform: translateX(30%);
   }
+}
+.ssdf{
+ 
+  @apply max-md:transform-none !important;
 }

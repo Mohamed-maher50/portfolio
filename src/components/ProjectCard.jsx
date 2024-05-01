@@ -1,64 +1,54 @@
+import {
+  motion,
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import React from "react";
-import Skill from "./Skill";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import ButtonOutline from "./buttons/ButtonOutline";
 
-const ProjectCard = ({
-  className,
-  description,
-  title,
-  parentProps,
-  technologies,
-  imgUrl,
-  demoLink,
-}) => {
-  const { t } = useTranslation();
+const ProjectCard = ({ imgUrl, demoLink, description, title, demoText }) => {
+  const contianerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: contianerRef,
+  });
+  const whenScroll = useTransform(scrollYProgress, [0, 0.5, 1], [-200, 0, 200]);
+
   return (
-    <div
-      {...parentProps}
-      className={`bg-secondary flex  shadow-sm border-2 border-primary text-white px-4 pt-4 rounded-3xl overflow-hidden ${className}`}
-    >
-      <div className="grid  max-md:grid-cols-1 max-lg:gap-1 grid-cols-2">
-        <div className="px-5 group-[.rtl]:md:order-2  ">
-          <img
-            src={imgUrl}
-            className="w-full max-sm:h-52 h-full max-md:rounded-3xl  max-h-96 rounded-tr-3xl rounded-tl-3xl"
-            alt="pexels"
-          />{" "}
-        </div>
+    <div className="flex  snap-center  py-10 overflow-hidden max-md:flex-col max-md:items-center max-md:text-center gap-3 max-w-screen-lg mx-auto">
+      <img
+        src={imgUrl}
+        ref={contianerRef}
+        alt="project"
+        className="max-w-md max-md:max-w-sm h-fit  shadow-lg rounded-lg"
+      />
 
-        <div className="flex  p-4  flex-col gap-2 lg:gap-7">
-          <h1 className="text-4xl max-lg:text-3xl capitalize text-accent">
-            {title}
-          </h1>
-          <h3 className="text-secondary-content text-lg max-lg:text-base opacity-80 ">
-            {description}
-          </h3>
-          <div className="flex  gap-2 flex-wrap py-2">
-            {technologies.map((technology, index) => {
-              return (
-                <Skill
-                  skill={technology}
-                  key={index}
-                  customStyle=" badge badge-primary text-base"
-                />
-              );
-            })}
-          </div>
-          <div className="flex group/demo  justify-between">
-            <Link
-              to={demoLink}
-              target="_blank"
-              className="flex  text-secondary hover:bg-secondary hover:text-accent btn hover:border-accent bg-accent  items-center gap-2"
-            >
-              {t("projects.buttonDemo")}
-              <FaArrowRightLong className=" pt-1 group-hover/demo:animate-runRight" />
-            </Link>
-            {/* <span>Github</span> */}
-          </div>
-        </div>
-      </div>
+      <motion.div
+        style={{
+          y: whenScroll,
+        }}
+        className="graw   flex-1 duration-200 ssdf ease-linear  flex flex-col  justify-start  h-full w-full max-w-full"
+      >
+        <h1 className="text-6xl text-accent max-sm:py-3 sm:my-5 lg:my-10 font-bold">
+          {title}
+        </h1>
+        <p className="text-secondary-content  max-sm:text-justify  font-medium">
+          {description}
+        </p>
+        <ButtonOutline
+          WrapElement={({ children }) => {
+            return (
+              <Link to={demoLink} target="_blank">
+                {children}
+              </Link>
+            );
+          }}
+        >
+          {demoText}
+        </ButtonOutline>
+      </motion.div>
     </div>
   );
 };

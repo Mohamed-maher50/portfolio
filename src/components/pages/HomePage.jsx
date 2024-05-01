@@ -1,18 +1,19 @@
 import React from "react";
-import LangButton from "../LangButton";
+
 import ThemeBar from "../layout/themes/ThemeBar";
 import Header from "../layout/Header";
 import Skills from "../layout/Skills";
 import i18n from "../../i18";
-import ProjectsContainer from "../../containers/ProjectsContainer";
+import Projects from "../../containers/Projects";
 import ContactForm from "../ContactForm";
 import { ToastContainer } from "react-toastify";
 import OnLangChange from "../../services/OnLangChange";
+import LangButton from "../buttons/LangButton";
+import ContactSection from "../../sections/ContactSection";
 
 const HomePage = () => {
   const handleChangeLanguage = (lan) => {
     i18n.changeLanguage(lan);
-
     if (lan == "ar") {
       document.body.dir = "rtl";
     } else {
@@ -21,22 +22,23 @@ const HomePage = () => {
   };
 
   return (
-    <div className="grid gap-7">
+    <div className="grid gap-7 ">
       <OnLangChange>
         {() => <LangButton changeLanguage={handleChangeLanguage} />}
       </OnLangChange>
       <ThemeBar />
       <Header />
-       <Skills />
-      <section id="projects" className="container mx-auto  ">
-        <ProjectsContainer />
-      </section>
+      <Skills />
 
+      <section id="projects" className="pb-20  grid gap-14 mx-auto  ">
+        <Projects />
+      </section>
+      <ContactSection />
       <OnLangChange>
         {(dir) => {
           return (
             <>
-              <ContactForm dir={dir} />
+              {/* <ContactForm dir={dir} /> */}
               <ToastContainer
                 position={dir === "rtl" ? "bottom-left" : "bottom-right"}
                 autoClose={5000}
@@ -51,7 +53,7 @@ const HomePage = () => {
             </>
           );
         }}
-      </OnLangChange> 
+      </OnLangChange>
     </div>
   );
 };

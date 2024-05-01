@@ -6,3 +6,21 @@
   background: #000;
   @apply bg-secondary text-primary;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* Adjust column width as needed */
+  grid-auto-rows: 200px;
+  /* Set row height */
+  grid-gap: 20px;
+  /* Adjust gap between grid items */
+}
+
+.snap{
+  scroll-snap-align: center;
+}
+#container {
+
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}

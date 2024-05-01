@@ -1,13 +1,9 @@
-import { useEffect } from "react";
-import i18n from "../i18";
+import i18next from "i18next";
 
 const LangButton = ({ changeLanguage }) => {
-  useEffect(() => {
-    console.log(i18n.language);
-  }, [i18n.language]);
   return (
     <div className=" fixed z-20 top-6 flex flex-col gap-1 p-2">
-      {i18n.language === "ar" && (
+      {i18next.language === "ar" && (
         <button
           className="btn-xs   shadow-md btn font-Rubik"
           onClick={() => changeLanguage("en")}
@@ -15,7 +11,7 @@ const LangButton = ({ changeLanguage }) => {
           En
         </button>
       )}
-      {i18n.language === "en" && (
+      {i18next.language === "en" && (
         <button
           className="btn-xs w-fit btn shadow-md "
           onClick={() => changeLanguage("ar")}

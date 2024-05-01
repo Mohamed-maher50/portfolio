@@ -8,22 +8,23 @@ module.exports = {
           primary: "#FCFCD4",//FCFCD4
           secondary: "#ffffff",//FCFCD4
           accent: "#00524C",
-          sub: "#e1aa74",
+          sub: "#2F4858",
+          "secondary-content":"#2F4858",
         },
         dark: {
           primary: "#34353A",
           secondary: "#3D3E42",
-          "secondary-content":"#ffffff",
+          "secondary-content":"#f7f7f7b0",
           accent: "#FFC86B",
           //#D5CEA3
           sub: "#E5E5CB",
         },
         natural: {
-          primary: "#BFD2B6",
-          secondary: "#FAFAFA",
-          accent: "#1C723D", //61876E
+          primary: "#154128",
+          secondary: "#246C44",
+          accent: "#F3DB61", //61876E
           sub: "#61876E",
-          "secondary-content":"#1D3911",
+          "secondary-content":"#fff",
         },
         CoolTonesPalette: {
           primary: "#F1F6F9",
