@@ -17,7 +17,10 @@ const Projects = () => {
   });
 
   return (
-    <section className=" snap-mandatory snap-y" ref={ProjectsContainerRef}>
+    <section
+      className=" md:snap-mandatory md:snap-y"
+      ref={ProjectsContainerRef}
+    >
       <SubTitleWithProgress
         scrollYProgress={scrollYProgress}
         subtitle={t("projects.subtitle")}

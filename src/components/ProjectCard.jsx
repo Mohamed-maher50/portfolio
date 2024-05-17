@@ -17,7 +17,7 @@ const ProjectCard = ({ imgUrl, demoLink, description, title, demoText }) => {
   const whenScroll = useTransform(scrollYProgress, [0, 0.5, 1], [-200, 0, 200]);
 
   return (
-    <div className="flex  snap-center  py-10 overflow-hidden max-md:flex-col max-md:items-center max-md:text-center gap-3 max-w-screen-lg mx-auto">
+    <div className="flex  md:snap-center  py-10 overflow-hidden max-md:flex-col max-md:items-center max-md:text-center gap-3 max-w-screen-lg mx-auto">
       <img
         src={imgUrl}
         ref={contianerRef}
@@ -29,7 +29,7 @@ const ProjectCard = ({ imgUrl, demoLink, description, title, demoText }) => {
         style={{
           y: whenScroll,
         }}
-        className="graw   flex-1 duration-200 ssdf ease-linear  flex flex-col  justify-start  h-full w-full max-w-full"
+        className="graw   flex-1 duration-200  ease-linear  flex flex-col  justify-start  h-full w-full max-w-full"
       >
         <h1 className="text-6xl text-accent max-sm:py-3 sm:my-5 lg:my-10 font-bold">
           {title}
