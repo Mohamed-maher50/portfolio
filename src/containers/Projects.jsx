@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Test from "../components/ProjectCard";
+
 import SubTitleWithProgress from "../components/SubTitleWithProgress";
 import { useScroll } from "framer-motion";
 import { useRef } from "react";
