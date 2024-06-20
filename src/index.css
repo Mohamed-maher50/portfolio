@@ -17,12 +17,12 @@ body[dir="ltr"] * {
     animation-play-state: paused;
   }
 }
-.accent{
-  @apply text-accent
+.accent {
+  @apply text-accent;
 }
 
-html{
-  @apply snap-proximity snap-y snap-normal
+html {
+  @apply snap-proximity snap-y snap-normal;
 }
 @keyframes slideInFromLeft {
   0% {
@@ -40,7 +40,6 @@ html{
     -o-transform: translateX(30%);
   }
 }
-.ssdf{
- 
+.stop_transition_small_screen {
   @apply max-md:transform-none !important;
 }

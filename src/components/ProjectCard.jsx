@@ -29,7 +29,7 @@ const ProjectCard = ({ imgUrl, demoLink, description, title, demoText }) => {
         style={{
           y: whenScroll,
         }}
-        className="graw   flex-1 duration-200  ease-linear  flex flex-col  justify-start  h-full w-full max-w-full"
+        className="grow  stop_transition_small_screen flex-1 duration-200  ease-linear  flex flex-col  justify-start  h-full w-full max-w-full"
       >
         <h1 className="text-6xl text-accent max-sm:py-3 sm:my-5 lg:my-10 font-bold">
           {title}
