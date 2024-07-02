@@ -26,7 +26,7 @@ const SubTitleWithProgress = ({ subtitle, scrollYProgress }) => {
           top: "-100%",
         },
       }}
-      className={` sticky overflow-x-hidden -top-2 z-20  w-full`}
+      className={`  overflow-x-hidden -top-2 z-20  w-full`}
       animate={stopVisable ? "hidden" : "visible"}
       transition={{
         duration: 1,

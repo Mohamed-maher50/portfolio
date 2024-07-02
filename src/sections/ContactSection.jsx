@@ -6,7 +6,7 @@ import SplitDualLayout from "../components/layout/SplitDualLayout";
 const ContactSection = () => {
   const { t } = useTranslation();
   return (
-    <section className="container mx-auto">
+    <section id="contactMe" className="container mx-auto">
       <h2 className="mb-4 text-4xl text-secondary-content capitalize font-extrabold  ">
         {t("contactForm.contactMe")}📬
       </h2>

@@ -17,7 +17,7 @@ const SubTitle = ({ subtitle }) => {
           scale: scrollYProgress,
           borderbottom: "5px solid ",
         }}
-        className="w-full max-md:text-3xl text-center py-5 sticky top-0 bg-primary z-20 text-secondary-content text-3xl font-bold uppercase mx-auto px-4 "
+        className="w-full max-md:text-3xl left-0 text-center py-5   bottom-full bg-primary z-20 text-secondary-content text-3xl font-bold uppercase mx-auto px-4 "
       >
         {subtitle}
       </motion.h1>

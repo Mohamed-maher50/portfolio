@@ -5,7 +5,10 @@ import HeroImage from "../HeroImage";
 
 const Header = () => {
   return (
-    <div className="container min-h-screen flex items-center mx-auto py-16 overflow-hidden capitalize">
+    <div
+      id="hero"
+      className="container py-16 flex items-center mx-auto  overflow-hidden capitalize"
+    >
       <SplitDualLayout>
         <SayHi />
 

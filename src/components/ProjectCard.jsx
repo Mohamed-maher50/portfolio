@@ -7,7 +7,7 @@ import {
 import React from "react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import ButtonOutline from "./buttons/ButtonOutline";
+import ButtonOutline from "./shared/buttons/ButtonOutline";
 
 const ProjectCard = ({ imgUrl, demoLink, description, title, demoText }) => {
   const contianerRef = useRef(null);
