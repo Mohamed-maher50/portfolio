@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-pascal-case */
 import { useEffect, useState } from "react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import { AnimatePresence, motion, useScroll } from "framer-motion";
-import Theme from "../Theme";
-import { themes } from "../layout/themes/ThemeBar";
+import * as Theme from "../Theme.tsx";
+
 import changeTheme from "../../lib/changeTheme";
 import * as Drawer from "../utils/Drawer";
 import { CiMenuFries } from "react-icons/ci";
@@ -10,6 +11,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Toggle from "../shared/buttons/ToggleButton";
 import i18n from "../../i18";
 import { useTranslation } from "react-i18next";
+import { themes } from "../../constants/ThemeColors.ts";
 
 const Logo = () => {
   return (
@@ -159,11 +161,29 @@ const Navbar = () => {
                                     exit={{ x: "150%" }}
                                     style={{ marginBottom: "10px" }}
                                   >
-                                    <Theme
-                                      colors={Object.values(colors)}
-                                      name={name}
+                                    <Theme.default
+                                      style={{
+                                        background: Object.values(colors)[0],
+                                      }}
                                       key={index}
-                                    />
+                                    >
+                                      <Theme.Title>{name}</Theme.Title>
+                                      <Theme.Body>
+                                        {Object.values(colors).map(
+                                          (color, i) => {
+                                            return (
+                                              <div
+                                                className={`h-4 w-4 rounded-full shadow-md`}
+                                                style={{
+                                                  background: color,
+                                                }}
+                                                key={i}
+                                              ></div>
+                                            );
+                                          }
+                                        )}
+                                      </Theme.Body>
+                                    </Theme.default>
                                   </motion.div>
                                 </DropdownMenu.Item>
                               );

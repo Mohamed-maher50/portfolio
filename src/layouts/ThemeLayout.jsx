@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import { themes } from "../components/layout/themes/ThemeBar";
+import { themes } from "../constants/ThemeColors";
 
 const ThemeLayout = ({ children }) => {
   useEffect(() => {
