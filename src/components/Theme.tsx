@@ -45,4 +45,17 @@ export const Title = forwardRef<HTMLDivElement, IThemeTitle>(
   }
 );
 
+interface ICircleColorValue extends HTMLAttributes<HTMLDivElement> {}
+export const CircleColorValue = forwardRef<HTMLDivElement, ICircleColorValue>(
+  ({ className, ...rest }, ref) => {
+    return (
+      <div
+        ref={ref}
+        className={cn(`h-4 w-4 rounded-full shadow-md`, className)}
+        {...rest}
+      ></div>
+    );
+  }
+);
+
 export default Theme;

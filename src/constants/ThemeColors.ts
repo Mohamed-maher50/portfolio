@@ -24,3 +24,9 @@ export const themes = {
     sub: "#9BA4B5",
   },
 };
+export const themesPalette = Object.entries(themes).map((theme) => {
+  return {
+    name: theme[0],
+    colors: Object.values(theme[1]),
+  };
+});
