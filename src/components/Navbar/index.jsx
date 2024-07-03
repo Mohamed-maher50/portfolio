@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import { AnimatePresence, motion, useScroll } from "framer-motion";
 import * as Theme from "../Theme.tsx";
-
 import changeTheme from "../../lib/changeTheme";
 import * as Drawer from "../utils/Drawer";
 import { CiMenuFries } from "react-icons/ci";
