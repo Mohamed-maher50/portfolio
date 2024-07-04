@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import ContactAnimation from "../components/ContactAnimation";
 import ContactForm from "../components/ContactForm";
 import SplitDualLayout from "../components/layout/SplitDualLayout";
+import FormImage from "../components/ContactForm/FormImage";
 
 const ContactSection = () => {
   const { t } = useTranslation();
@@ -11,11 +11,11 @@ const ContactSection = () => {
         {t("contactForm.contactMe")}📬
       </h2>
       <SplitDualLayout>
-        <div className="relative">
-          <ContactAnimation />
-          <ContactForm />
+        <ContactForm />
+
+        <div className="flex  h-full w-full overflow-hidden  max-md:hidden  items-center justify-center">
+          <FormImage />
         </div>
-        <div className="flex items-center justify-center"></div>
       </SplitDualLayout>
     </section>
   );

@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { SendMail } from "../services/SendMail";
+import { SendMail } from "../../services/SendMail";
 import { toast } from "react-toastify";
-import FormLabel from "../FormLabel";
-import FormInput from "./FormInput";
-import LoveIcon from "../assets/Loveicon.svg";
+import FormLabel from "../../FormLabel";
+import FormInput from "../FormInput";
+import LoveIcon from "../../assets/Loveicon.svg";
 import { motion } from "framer-motion";
 
 const ContactForm = ({ dir }) => {
@@ -36,17 +36,6 @@ const ContactForm = ({ dir }) => {
 
   return (
     <motion.form
-      whileInView={{
-        scale: 1,
-      }}
-      initial={{
-        scale: 0,
-      }}
-      transition={{
-        delay: 3,
-        duration: 0.5,
-        ease: "easeInOut",
-      }}
       onSubmit={handleSubmitForm}
       className="space-y-8 rounded-lg my-4  shadow-md bg-white p-2"
     >

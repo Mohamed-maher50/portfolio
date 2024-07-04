@@ -1,7 +1,7 @@
 import Header from "../layout/Header";
 import Skills from "../layout/Skills";
 import { Link as ScrollLink } from "react-scroll";
-import Projects from "../../containers/Projects";
+import Projects from "../../sections/Projects";
 import { ToastContainer } from "react-toastify";
 import OnLangChange from "../../services/OnLangChange";
 import ContactSection from "../../sections/ContactSection";
