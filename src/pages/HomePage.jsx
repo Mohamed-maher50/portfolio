@@ -1,17 +1,17 @@
-import Header from "../layout/Header";
-import Skills from "../layout/Skills";
+import Header from "../components/layout/Header";
+import Skills from "../components/layout/Skills";
 import { Link as ScrollLink } from "react-scroll";
-import Projects from "../../sections/Projects";
 import { ToastContainer } from "react-toastify";
-import OnLangChange from "../../services/OnLangChange";
-import ContactSection from "../../sections/ContactSection";
-import Navbar from "../Navbar";
-import * as Drawer from "../../components/utils/Drawer";
-import DrawerLinks from "../utils/Drawer/DrawerLinks";
+import OnLangChange from "../services/OnLangChange";
+import Navbar from "../components/Navbar";
+import * as Drawer from "./../components/utils/Drawer";
 import { IoIosClose } from "react-icons/io";
 import { useTranslation } from "react-i18next";
-import i18n from "../../i18";
-import Toggle from "../shared/buttons/ToggleButton";
+import i18n from "../i18";
+import Toggle from "../components/shared/buttons/ToggleButton";
+import DrawerLinks from "../components/utils/Drawer/DrawerLinks";
+import ContactSection from "../sections/ContactSection";
+import Projects from "../sections/Projects";
 
 const HomePage = () => {
   const { t } = useTranslation();

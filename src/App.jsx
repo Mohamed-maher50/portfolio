@@ -1,7 +1,7 @@
 import "./App.css";
 import { motion } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./components/pages/HomePage";
+import HomePage from "./pages/HomePage";
 import ScrollProgress from "./components/ScrollProgress";
 
 function App() {

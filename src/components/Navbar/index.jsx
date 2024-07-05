@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import Logo from "./Logo.tsx";
 import { navVariants } from "./NavMotionVariants.tsx";
 import ThemeMenu from "./ThemeMenu";
-import useStickyNav from "../hooks/useStickyNav";
+import useStickyNav from "../../hooks/useStickyNav";
 
 const Navbar = () => {
   const { isSticky } = useStickyNav();
