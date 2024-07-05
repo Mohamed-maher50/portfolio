@@ -1,10 +1,4 @@
-import {
-  motion,
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-} from "framer-motion";
-import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import ButtonOutline from "./shared/buttons/ButtonOutline";
@@ -22,7 +16,7 @@ const ProjectCard = ({ imgUrl, demoLink, description, title, demoText }) => {
         src={imgUrl}
         ref={contianerRef}
         alt="project"
-        className="max-w-md max-md:max-w-sm h-fit  shadow-lg rounded-lg"
+        className="max-w-md max-md:max-w-sm w-full h-fit  shadow-lg rounded-lg"
       />
 
       <motion.div

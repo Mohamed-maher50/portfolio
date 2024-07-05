@@ -18,6 +18,9 @@ const Skills = () => {
               variants={skillVariants}
               initial={"initial"}
               whileInView={"start"}
+              viewport={{
+                once: true,
+              }}
             />
           ))}
         </motion.div>
